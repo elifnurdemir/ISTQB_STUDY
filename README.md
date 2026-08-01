@@ -1,32 +1,53 @@
-# React + TypeScript + Vite
+# ISTQB Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ISTQB Foundation Level sınavına hazırlık için geliştirilmiş, tarayıcıda çalışan bir çalışma ve pratik uygulaması.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard** — genel ilerleme özeti ve hızlı navigasyon
+- **Modül Bazlı Quiz** — bölüm/chapter seçerek pratik sorular çözme
+- **Sınav Simülasyonu** — süreli, gerçek sınav formatında deneme
+- **Yanlışlar Bankası (Mistakes Bank)** — daha önce yanlış cevaplanan soruların tekrarı
+- **Analytics** — günlük ilerleme ve doğru/yanlış istatistikleri
+- **Sözlük (Glossary)** — ISTQB terimleri ve tanımları
+- **Cheat Sheet** — bölüm bazlı özet notlar ve karıştırılan kavram çiftleri
+- **Audio Coach** — sesli anlatım/pratik modu
+- **Pomodoro Widget** — çalışma sırasında zaman yönetimi
+- Karanlık/aydınlık tema desteği
 
-## React Compiler
+## Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Oxlint](https://oxc.rs/) (linting)
+- [lucide-react](https://lucide.dev/) (ikonlar)
 
-## Expanding the Oxlint configuration
+Veriler (`src/data/`) tarayıcının yerel depolamasında (localStorage) tutulur; ayrı bir backend gerekmez.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Kurulum
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Kullanım
+
+```bash
+npm run dev       # geliştirme sunucusu
+npm run build     # production build (dist/)
+npm run preview   # build çıktısını yerelde önizleme
+npm run lint      # Oxlint ile kod kontrolü
+```
+
+## Proje Yapısı
+
+```
+src/
+  components/   # Sidebar, QuizContainer, Timer, Flashcard vb.
+  pages/        # Dashboard, ModuleSelect, ExamIntro, Analytics, Glossary, CheatSheet, AudioCoach, MistakesBank
+  context/      # StatsContext (istatistik durum yönetimi)
+  hooks/        # useTheme, usePomodoro, useQuizStats, useFlashcardProgress, useSpeech
+  data/         # sorular, syllabus, sözlük, cheat sheet içerikleri
+  lib/          # storage ve zorluk seviyesi yardımcı fonksiyonları
+```
