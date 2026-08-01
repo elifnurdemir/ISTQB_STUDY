@@ -19,7 +19,7 @@ export function Dashboard({ onNavigate }: DashboardProps) {
   const goalProgress = Math.min(100, Math.round((answeredToday / dailyGoal) * 100));
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8">
+    <div className="w-full space-y-8">
       <div>
         <h1 className="text-2xl font-semibold">Çalışma Defterim</h1>
         <p className="mt-1 text-sm" style={{ color: "var(--ink-soft)" }}>

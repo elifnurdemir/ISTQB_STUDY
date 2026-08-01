@@ -94,7 +94,7 @@ export function QuizContainer({ config, onExit }: QuizContainerProps) {
 
   return (
     <div className="relative">
-      <div className="mx-auto mb-4 flex max-w-2xl items-center justify-between">
+      <div className="mx-auto mb-4 flex max-w-4xl items-center justify-between">
         <button
           onClick={onExit}
           className="flex items-center gap-1.5 text-sm transition-colors"

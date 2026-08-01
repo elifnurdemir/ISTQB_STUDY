@@ -66,7 +66,7 @@ export function QuestionCard({
   const keyPoints = getChapterKeyPoints(question.chapter);
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-4xl">
       <div
         className="mb-4 flex items-center justify-between text-sm"
         style={{ color: "var(--ink-soft)" }}

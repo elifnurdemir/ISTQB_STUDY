@@ -35,7 +35,7 @@ export function ModuleSelect({ onStart }: ModuleSelectProps) {
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
+    <div className="w-full space-y-6">
       <div>
         <h1 className="text-2xl font-semibold">Konu Bazlı Çalışma</h1>
         <p className="mt-1 text-sm" style={{ color: "var(--ink-soft)" }}>
