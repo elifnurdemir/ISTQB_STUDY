@@ -1,0 +1,440 @@
+[
+  {
+    "id": "hata-ayiklama",
+    "term": "Hata Ayıklama (Debugging)",
+    "definition": "Bir arızaya neden olan hatanın (defect) kök nedeninin bulunması, analiz edilmesi ve giderilmesi sürecidir. Test etmeden farklı bir aktivitedir; test etme arızaları tetiklerken hata ayıklama bu arızaların nedenini ortadan kaldırır.",
+    "chapter": 1
+  },
+  {
+    "id": "hata",
+    "term": "Hata (Defect)",
+    "definition": "Bir insan hatası (yanlışlık) sonucunda gereksinim, kaynak kod veya destekleyici bir eserde (ör. dokümantasyon) oluşan kusurdur. Bir hata çalıştırıldığında sistemde bir arızaya (failure) neden olabilir.",
+    "chapter": 1
+  },
+  {
+    "id": "ariza",
+    "term": "Arıza (Failure)",
+    "definition": "Bir bileşenin veya sistemin, koddaki bir hatanın çalıştırılması sonucunda beklenen sonuçlardan sapması, yani gereken bir işlevi yerine getirememesidir.",
+    "chapter": 1
+  },
+  {
+    "id": "insan-hatasi",
+    "term": "İnsan Hatası (Yanlışlık)",
+    "definition": "Zaman baskısı, iş ürünlerinin karmaşıklığı, yetersiz eğitim veya yorgunluk gibi nedenlerle insanların yaptığı ve sonunda yazılım hatalarına (defect) yol açan yanlış davranıştır.",
+    "chapter": 1
+  },
+  {
+    "id": "kok-neden",
+    "term": "Kök Neden (Root Cause)",
+    "definition": "Bir problemin (ör. bir hata veya arıza) ortaya çıkmasının temel sebebidir. Kök neden analiziyle belirlenir; kök nedenin ortadan kaldırılmasıyla benzer arızalar veya hatalar önlenebilir ya da sıklıkları azaltılabilir.",
+    "chapter": 1
+  },
+  {
+    "id": "kalite-guvence",
+    "term": "Kalite Güvence (KG)",
+    "definition": "Süreçlerin doğru uygulanmasına odaklanan, süreç odaklı ve önleyici bir yaklaşımdır. Test etmeden farklı olarak KG, iyi bir sürecin uygulanıp uygulanmadığına odaklanır ve projedeki herkesin sorumluluğundadır; test etme ise ürün odaklı ve düzeltici bir yaklaşımdır.",
+    "chapter": 1
+  },
+  {
+    "id": "test-esasi",
+    "term": "Test Esası (Test Basis)",
+    "definition": "Test koşullarının türetildiği tüm bilgi kaynağıdır (ör. gereksinimler, tasarım belgeleri, kullanıcı hikayeleri, kod). Test analizi sırasında test esası incelenerek test koşulları belirlenir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-nesnesi",
+    "term": "Test Nesnesi (Test Object)",
+    "definition": "Test edilmekte olan bileşen veya sistemdir. Yazılım testi sırasında değerlendirilen iş ürününe verilen isimdir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-koşulu",
+    "term": "Test Koşulu (Test Condition)",
+    "definition": "Test analizi aşamasında test esasının analiz edilmesiyle belirlenen ve ilgili risklerle birlikte önceliklendirilen, test edilebilir bir öge veya olaydır (ör. bir fonksiyon, işlem, özellik, kalite karakteristiği).",
+    "chapter": 1
+  },
+  {
+    "id": "test-senaryosu",
+    "term": "Test Senaryosu (Test Case)",
+    "definition": "Belirli bir hedefe veya test koşuluna ulaşmak için tanımlanan, ön koşullar, girdiler, beklenen sonuçlar ve gerekiyorsa art koşullardan oluşan bir dizi işlemdir; test tasarımı aktivitesinin çıktısıdır.",
+    "chapter": 1
+  },
+  {
+    "id": "test-planlama",
+    "term": "Test Planlama (Test Planning)",
+    "definition": "Test hedefini belirleyip, ardından genel bağlam dahilindeki kısıtlar kapsamında bu hedeflere en iyi şekilde ulaşılmasını sağlayacak yaklaşımı seçme aktivitesidir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-gozetimi-kontrolu",
+    "term": "Test Gözetimi ve Test Kontrolü",
+    "definition": "Test gözetimi tüm test aktivitelerinin sürekli izlenmesi ve planlanan ile gerçekleşenin karşılaştırılmasıdır; test kontrolü ise test hedeflerine ulaşmak için gerekli aksiyonların alınmasıdır.",
+    "chapter": 1
+  },
+  {
+    "id": "test-analizi",
+    "term": "Test Analizi (Test Analysis)",
+    "definition": "Test edilebilir özellikleri belirlemek ve ilgili riskler ile birlikte test koşullarını tanımlayıp önceliklendirmek üzere test esasının analiz edilmesi aktivitesidir; \"ne test edilecek\" sorusuna cevap verir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-tasarimi",
+    "term": "Test Tasarımı (Test Design)",
+    "definition": "Test koşullarının test senaryoları ve diğer test çalışma ürünlerine (ör. test başlatma belgeleri) dönüştürülmesi aktivitesidir; \"nasıl test edilecek\" sorusunu cevaplar.",
+    "chapter": 1
+  },
+  {
+    "id": "test-uyarlama",
+    "term": "Test Uyarlama (Test Implementation)",
+    "definition": "Test koşumu için gerekli test çalışma ürünlerinin (test prosedürleri, test grupları, test verisi, test ortamı vb.) oluşturulması veya edinilmesi aktivitesidir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-kosumu",
+    "term": "Test Koşumu (Test Execution)",
+    "definition": "Testlerin test koşum çizelgesine göre çalıştırılması, gerçek sonuçların beklenen sonuçlarla karşılaştırılması ve anomalilerin analiz edilmesi aktivitesidir. Manuel veya otomatik olabilir.",
+    "chapter": 1
+  },
+  {
+    "id": "test-tamamlama",
+    "term": "Test Tamamlama (Test Completion)",
+    "definition": "Genellikle proje kilometre taşlarında (sürüm, döngü sonu, test seviyesi tamamlama vb.) gerçekleştirilen; çözülmemiş hataların, test çalışma ürünlerinin arşivlenmesi ve test tamamlama raporunun oluşturulmasını içeren aktivitedir.",
+    "chapter": 1
+  },
+  {
+    "id": "izlenebilirlik",
+    "term": "İzlenebilirlik (Traceability)",
+    "definition": "Test esası unsurları ile bunlarla ilişkili test çalışma ürünleri, test sonuçları ve hatalar arasındaki ilişkinin kaydedilip sürdürülmesidir; kapsam değerlendirmesini, etki analizini ve raporlamayı destekler.",
+    "chapter": 1
+  },
+  {
+    "id": "saglama",
+    "term": "Sağlama (Validation)",
+    "definition": "Sistemin operasyonel ortamda kullanıcı ve diğer paydaşların ihtiyaçlarını karşılayıp karşılamadığının kontrol edilmesidir; \"doğru ürünü mü yapıyoruz\" sorusuna cevap arar.",
+    "chapter": 1
+  },
+  {
+    "id": "dogrulama",
+    "term": "Doğrulama (Verification)",
+    "definition": "Sistemin belirli gereksinimleri karşılayıp karşılamadığının kontrol edilmesidir; \"ürünü doğru mu yapıyoruz\" sorusuna cevap arar.",
+    "chapter": 1
+  },
+  {
+    "id": "test-cesidi",
+    "term": "Test Çeşidi (Test Type)",
+    "definition": "Belirli kalite karakteristikleriyle ilişkili, bir veya birden fazla test seviyesinde uygulanabilen test aktiviteleri grubudur (ör. fonksiyonel test, fonksiyonel olmayan test, kara kutu testi, beyaz kutu testi).",
+    "chapter": 2
+  },
+  {
+    "id": "test-seviyesi",
+    "term": "Test Seviyesi (Test Level)",
+    "definition": "Birlikte düzenlenen ve yönetilen bir test aktivitesi grubudur. Her test seviyesi, bağımsız bileşenlerden komple sisteme kadar belirli bir geliştirme aşamasındaki yazılımla ilgili olarak gerçekleştirilir (ör. bileşen testi, entegrasyon testi, sistem testi, kabul testi).",
+    "chapter": 2
+  },
+  {
+    "id": "bilesen-testi",
+    "term": "Bileşen Testi (Component Testing)",
+    "definition": "Birim testi olarak da bilinir; bileşenlerin ayrı olarak test edilmesine odaklanır ve genelde geliştiriciler tarafından kendi geliştirme ortamlarında yapılır.",
+    "chapter": 2
+  },
+  {
+    "id": "bilesen-entegrasyon-testi",
+    "term": "Bileşen Entegrasyon Testi",
+    "definition": "Birim entegrasyon testi olarak da bilinir; arayüzlerin ve bileşenler arasındaki etkileşimlerin test edilmesine odaklanır.",
+    "chapter": 2
+  },
+  {
+    "id": "sistem-testi",
+    "term": "Sistem Testi (System Testing)",
+    "definition": "Bir sistemin veya ürünün genel davranışına ve yeteneklerine odaklanan; genellikle uçtan uca fonksiyonel testleri ve kalite karakteristiklerine ilişkin fonksiyonel olmayan testleri içeren test seviyesidir.",
+    "chapter": 2
+  },
+  {
+    "id": "sistem-entegrasyon-testi",
+    "term": "Sistem Entegrasyon Testi",
+    "definition": "Test edilen sistem ile diğer sistemler ve harici hizmetler arasındaki arayüzlerin test edilmesine odaklanan test seviyesidir.",
+    "chapter": 2
+  },
+  {
+    "id": "kabul-testi",
+    "term": "Kabul Testi (Acceptance Testing)",
+    "definition": "Sistemin sağlamasını yapmaya ve kullanıcıya sunulmaya hazır olduğunu göstermeye odaklanan test seviyesidir; kullanıcı kabul testi, operasyonel kabul testi, sözleşmesel/düzenleyici kabul testi, alfa ve beta testi gibi çeşitleri vardır.",
+    "chapter": 2
+  },
+  {
+    "id": "fonksiyonel-test",
+    "term": "Fonksiyonel Test",
+    "definition": "Bir bileşen ya da sistemin yerine getirmesi gereken fonksiyonları değerlendiren test çeşididir; test nesnesinin \"ne\" yapması gerektiğini kontrol eder.",
+    "chapter": 2
+  },
+  {
+    "id": "fonksiyonel-olmayan-test",
+    "term": "Fonksiyonel Olmayan Test",
+    "definition": "Bir bileşen veya sistemin fonksiyonel gereksinimleri dışındaki özelliklerini (ör. performans, kullanılabilirlik, güvenlik) değerlendiren; sistemin işleri \"ne kadar iyi\" yaptığını ölçen test çeşididir.",
+    "chapter": 2
+  },
+  {
+    "id": "kara-kutu-testi",
+    "term": "Kara Kutu Testi (Black-box Testing)",
+    "definition": "Gereksinim bazlı bir test çeşididir; test nesnesinin iç yapısına atıfta bulunmadan, sistemin gereksinimlere karşı davranışını kontrol eder.",
+    "chapter": 2
+  },
+  {
+    "id": "beyaz-kutu-testi",
+    "term": "Beyaz Kutu Testi (White-box Testing)",
+    "definition": "Yapı bazlı bir test çeşididir; sistemin uygulama veya iç yapısından (kod, mimari, veri akışları vb.) testler elde eder ve altta yatan yapının kapsanmasını hedefler.",
+    "chapter": 2
+  },
+  {
+    "id": "onaylama-testi",
+    "term": "Onaylama Testi (Confirmation Testing)",
+    "definition": "Bir hatanın giderilmesi için yapılan düzeltmenin başarılı olduğunu, yani hatanın neden olduğu arızanın artık meydana gelmediğini onaylamak için yapılan testtir.",
+    "chapter": 2
+  },
+  {
+    "id": "regresyon-testi",
+    "term": "Regresyon Testi (Regression Testing)",
+    "definition": "Onaylama testinden geçmiş bir düzeltme dahil olmak üzere yapılan bir değişikliğin, sistemin başka bölümlerinde olumsuz bir sonuca (yeni arıza) neden olup olmadığını teyit eden testtir.",
+    "chapter": 2
+  },
+  {
+    "id": "bakim-testi",
+    "term": "Bakım Testi (Maintenance Testing)",
+    "definition": "Planlı sürümler, düzeltmeler, ortam değişiklikleri veya bir sistemin kullanımdan kaldırılması gibi tetikleyicilerle canlı ortamdaki bir sisteme yapılan değişikliklerin test edilmesidir.",
+    "chapter": 2
+  },
+  {
+    "id": "shift-left",
+    "term": "Shift-Left Yaklaşımı",
+    "definition": "Testin YGYD'nin mümkün olduğunca erken aşamalarında (kod yazılmadan veya bileşenler entegre edilmeden önce) gerçekleştirilmesini öneren yaklaşımdır; \"erken test\" prensibinin bir uygulamasıdır.",
+    "chapter": 2
+  },
+  {
+    "id": "anomali",
+    "term": "Anomali (Anomaly)",
+    "definition": "Beklenen davranış veya sonuçtan sapma gösteren, bir gözden geçirme veya statik analiz sırasında tespit edilen ve hata olup olmadığının araştırılması gereken durumdur.",
+    "chapter": 3
+  },
+  {
+    "id": "dinamik-test",
+    "term": "Dinamik Test",
+    "definition": "Yazılımın çalıştırılmasını gerektiren test türüdür; farklı test teknikleri kullanılarak test senaryoları elde edilir ve arızalar tetiklenir.",
+    "chapter": 3
+  },
+  {
+    "id": "statik-test",
+    "term": "Statik Test",
+    "definition": "Test edilen yazılımın çalıştırılmasına gerek olmadan, kodun, sürecin veya diğer iş ürünlerinin manuel inceleme (gözden geçirme) veya araç yardımıyla (statik analiz) değerlendirilmesidir.",
+    "chapter": 3
+  },
+  {
+    "id": "statik-analiz",
+    "term": "Statik Analiz",
+    "definition": "Test nesnesinin çalıştırılması gerekmeden bir araç kullanılarak değerlendirilmesidir; belirli kod hatalarını, sürdürülebilirlik ve güvenlik sorunlarını tespit etmek için kullanılır.",
+    "chapter": 3
+  },
+  {
+    "id": "gozden-gecirme",
+    "term": "Gözden Geçirme (Review)",
+    "definition": "Bir iş ürününün kalitesinin değerlendirilmesi için yapılan bir statik test faaliyetidir. Gayri resmi gözden geçirme, üzerinden geçme, teknik gözden geçirme ve teftiş gibi farklı formalite düzeyinde çeşitleri vardır.",
+    "chapter": 3
+  },
+  {
+    "id": "gayri-resmi-gozden-gecirme",
+    "term": "Gayri Resmi Gözden Geçirme",
+    "definition": "Tanımlanmış bir sürecin izlenmediği ve resmi olarak belgelenmiş bir çıktı gerektirmeyen gözden geçirme çeşididir; ana hedefi anomalileri tespit etmektir.",
+    "chapter": 3
+  },
+  {
+    "id": "teftis",
+    "term": "Teftiş (Inspection)",
+    "definition": "En resmi gözden geçirme çeşididir; tanımlı gözden geçirme süreci eksiksiz izlenir, ana hedefi maksimum sayıda anomali bulmaktır ve metrikler toplanarak süreç iyileştirmesinde kullanılır.",
+    "chapter": 3
+  },
+  {
+    "id": "teknik-gozden-gecirme",
+    "term": "Teknik Gözden Geçirme",
+    "definition": "Teknik açıdan nitelikli gözden geçiriciler tarafından bir moderatör yönetiminde gerçekleştirilen, teknik bir problem hakkında fikir birliği sağlamayı ve kaliteyi değerlendirmeyi amaçlayan gözden geçirme çeşididir.",
+    "chapter": 3
+  },
+  {
+    "id": "uzerinden-gecme",
+    "term": "Üzerinden Geçme (Walkthrough)",
+    "definition": "Yazarın öncülüğünde yürütülen; kaliteyi değerlendirmek, güven oluşturmak, gözden geçiricileri eğitmek ve anomalileri tespit etmek gibi çeşitli amaçlara hizmet edebilen bir gözden geçirme çeşididir.",
+    "chapter": 3
+  },
+  {
+    "id": "denklik-paylarina-ayirma",
+    "term": "Denklik Paylarına Ayırma (Equivalence Partitioning)",
+    "definition": "Verileri, aynı payın tüm unsurlarının test nesnesi tarafından aynı şekilde işleneceği varsayımıyla paylara (denklik paylarına) ayıran bir kara kutu test tekniğidir; her pay için bir test yapılması yeterlidir.",
+    "chapter": 4
+  },
+  {
+    "id": "sinir-deger-analizi",
+    "term": "Sınır Değer Analizi (Boundary Value Analysis)",
+    "definition": "Denklik paylarının sınırlarının (minimum ve maksimum değerlerinin) denenmesine dayalı bir kara kutu test tekniğidir; sadece sıralı verilerden oluşan paylarda kullanılabilir.",
+    "chapter": 4
+  },
+  {
+    "id": "karar-tablosu-testi",
+    "term": "Karar Tablosu Testi (Decision Table Testing)",
+    "definition": "Farklı koşul kombinasyonlarının nasıl farklı çıktılar (aksiyonlar) ürettiğini göstermek için kullanılan bir kara kutu test tekniğidir; iş kuralları gibi karmaşık mantığın gösterilmesinde etkilidir.",
+    "chapter": 4
+  },
+  {
+    "id": "durum-gecisi-testi",
+    "term": "Durum Geçişi Testi (State Transition Testing)",
+    "definition": "Bir sistemin olası durumlarını ve geçerli durum geçişlerini modelleyen durum diyagramı veya durum tablosuna dayanan bir kara kutu test tekniğidir.",
+    "chapter": 4
+  },
+  {
+    "id": "komut-testi",
+    "term": "Komut Testi (Statement Testing) ve Komut Kapsama Yüzdesi",
+    "definition": "Kapsam öğelerinin çalıştırılabilir komutlar olduğu bir beyaz kutu test tekniğidir. Komut kapsama yüzdesi, denenen komut sayısının kod içindeki toplam çalıştırılabilir komut sayısına bölünmesiyle ölçülür.",
+    "chapter": 4
+  },
+  {
+    "id": "dal-testi",
+    "term": "Dal Testi (Branch Testing) ve Dal Kapsamı",
+    "definition": "Kapsam öğelerinin kontrol akış grafiğindeki dallar olduğu bir beyaz kutu test tekniğidir. Dal kapsamı, denenen dal sayısının toplam dal sayısına bölünmesiyle ölçülür ve komut kapsamını içerir.",
+    "chapter": 4
+  },
+  {
+    "id": "tecrubeye-dayali-test-teknigi",
+    "term": "Tecrübeye Dayalı Test Tekniği",
+    "definition": "Test senaryolarının tasarımı ve uyarlanmasında test uzmanlarının bilgi ve deneyimini etkin bir şekilde kullanan; kara kutu ve beyaz kutu tekniklerini tamamlayıcı nitelikte olan test tekniğidir (ör. hata tahminleme, keşif testi, kontrol listesine dayalı test).",
+    "chapter": 4
+  },
+  {
+    "id": "hata-tahminleme",
+    "term": "Hata Tahminleme (Error Guessing)",
+    "definition": "Test uzmanının geçmiş bilgisine dayanarak insan hatalarının, yazılım hatalarının ve arızaların ortaya çıkarılmasını sağlayan tecrübeye dayalı bir test tekniğidir.",
+    "chapter": 4
+  },
+  {
+    "id": "kesif-testi",
+    "term": "Keşif Testi (Exploratory Testing)",
+    "definition": "Test uzmanının test nesnesi hakkında bilgi edinirken testleri eş zamanlı olarak tasarladığı, koşturduğu ve değerlendirdiği tecrübeye dayalı bir test tekniğidir; genellikle oturum bazlı yaklaşımla yapılır.",
+    "chapter": 4
+  },
+  {
+    "id": "kontrol-listesine-dayali-test",
+    "term": "Kontrol Listesine Dayalı Test",
+    "definition": "Test uzmanının bir kontrol listesindeki test koşullarını kapsayacak şekilde test tasarladığı, uyguladığı ve koşturduğu tecrübeye dayalı test tekniğidir.",
+    "chapter": 4
+  },
+  {
+    "id": "kabul-kriterleri",
+    "term": "Kabul Kriterleri (Acceptance Criteria)",
+    "definition": "Bir kullanıcı hikayesinin paydaşlar tarafından kabul edilmesi için karşılaması gereken koşullardır; kullanıcı hikayesinin kapsamını tanımlar ve kabul testinin esasını oluşturur.",
+    "chapter": 4
+  },
+  {
+    "id": "atdd",
+    "term": "Kabul Testi Güdümlü Yazılım Geliştirme (ATDD)",
+    "definition": "Kullanıcı hikayesi uygulanmadan önce, farklı perspektiflere sahip ekip üyeleri tarafından kabul kriterlerinden test senaryolarının türetildiği bir önce-test-et yaklaşımıdır.",
+    "chapter": 4
+  },
+  {
+    "id": "test-teknigi",
+    "term": "Test Tekniği (Test Technique)",
+    "definition": "Test analizi ve test tasarımı sırasında test uzmanına destek sağlayan; nispeten az ama yeterli sayıda test senaryosunun sistematik biçimde geliştirilmesine yardımcı olan yöntemdir (kara kutu, beyaz kutu, tecrübeye dayalı).",
+    "chapter": 4
+  },
+  {
+    "id": "giris-kriterleri",
+    "term": "Giriş Kriterleri (Entry Criteria)",
+    "definition": "Belirli bir aktivitenin başlaması için gereken önkoşulları tanımlar; karşılanmazsa aktivite daha zor, uzun, maliyetli ve riskli olabilir.",
+    "chapter": 5
+  },
+  {
+    "id": "cikis-kriterleri",
+    "term": "Çıkış Kriterleri (Exit Criteria)",
+    "definition": "Bir aktivitenin tamamlandığını anlamak için nelerin karşılanması gerektiğini tanımlar; her test seviyesi için tanımlanmalıdır. Çevik yazılım geliştirmede genellikle Tamamlandı Tanımı olarak adlandırılır.",
+    "chapter": 5
+  },
+  {
+    "id": "risk",
+    "term": "Risk",
+    "definition": "Sonucu olumsuz bir etkiye neden olacak potansiyel bir olay, tehlike, tehdit veya durumdur; risk olasılığı ve risk etkisi ile karakterize edilir.",
+    "chapter": 5
+  },
+  {
+    "id": "urun-riski",
+    "term": "Ürün Riski (Product Risk)",
+    "definition": "Ürünün kalite karakteristikleriyle ilgili risklerdir (ör. eksik fonksiyonalite, hatalı hesaplamalar, güvenlik açıkları); meydana geldiğinde kullanıcı memnuniyetsizliği veya itibar kaybı gibi sonuçlara yol açabilir.",
+    "chapter": 5
+  },
+  {
+    "id": "proje-riski",
+    "term": "Proje Riski (Project Risk)",
+    "definition": "Projenin yönetimi ve kontrolüyle ilgili risklerdir (ör. organizasyonel sorunlar, insan kaynaklı sorunlar, teknik veya tedarikçi sorunları); ortaya çıktığında projenin zaman çizelgesini, bütçesini veya kapsamını etkiler.",
+    "chapter": 5
+  },
+  {
+    "id": "risk-bazli-test",
+    "term": "Risk Bazlı Test (Risk-based Testing)",
+    "definition": "Test aktivitelerinin risk analizi ve risk kontrolüne göre seçildiği, önceliklendirildiği ve yönetildiği bir test yaklaşımıdır.",
+    "chapter": 5
+  },
+  {
+    "id": "risk-seviyesi",
+    "term": "Risk Seviyesi (Risk Level)",
+    "definition": "Risk olasılığı ve risk etkisi faktörleriyle belirlenen bir risk ölçüsüdür; risk seviyesi ne kadar yüksekse riskin çözülmesi o kadar önemlidir.",
+    "chapter": 5
+  },
+  {
+    "id": "test-plani",
+    "term": "Test Planı (Test Plan)",
+    "definition": "Bir test projesi için test hedeflerini, kaynakları ve süreçleri belirten dokümandır; test bağlamı, riskler, test yaklaşımı, bütçe ve zaman çizelgesi gibi bilgileri içerir.",
+    "chapter": 5
+  },
+  {
+    "id": "test-stratejisi",
+    "term": "Test Stratejisi (Test Strategy)",
+    "definition": "Bir organizasyon veya birden fazla proje düzeyinde test yaklaşımına ilişkin genel kararları tanımlayan, test planına temel oluşturan üst seviye dokümandır.",
+    "chapter": 5
+  },
+  {
+    "id": "test-piramidi",
+    "term": "Test Piramidi",
+    "definition": "Farklı testlerin farklı ayrıntı seviyelerine sahip olabileceğini gösteren bir modeldir; alt katmanlar küçük, izole ve hızlı testleri, üst katmanlar ise daha yavaş uçtan uca testleri temsil eder.",
+    "chapter": 5
+  },
+  {
+    "id": "test-ceyrekleri",
+    "term": "Test Çeyrekleri (Test Quadrants)",
+    "definition": "Brian Marick tarafından tanımlanan; test seviyelerini Çevik yazılım geliştirmede uygun test çeşitleri, aktiviteleri ve iş ürünleriyle iş odaklı/teknoloji odaklı ve ekibi destekleme/ürünü eleştirme eksenlerinde dört çeyreğe ayıran modeldir.",
+    "chapter": 5
+  },
+  {
+    "id": "test-ilerleme-raporu",
+    "term": "Test İlerleme Raporu",
+    "definition": "Test gözetimi ve kontrolü sırasında düzenli olarak (ör. günlük, haftalık) hazırlanan ve test ilerleme durumu, engeller, metrikler ve yeni riskler gibi bilgileri içeren rapordur.",
+    "chapter": 5
+  },
+  {
+    "id": "test-tamamlama-raporu",
+    "term": "Test Tamamlama Raporu",
+    "definition": "Bir proje, test seviyesi veya test çeşidi tamamlandığında hazırlanan; test özeti, ürün kalitesi değerlendirmesi, plandan sapmalar ve alınan dersleri içeren rapordur.",
+    "chapter": 5
+  },
+  {
+    "id": "hata-yonetimi",
+    "term": "Hata Yönetimi (Defect Management)",
+    "definition": "Hataların veya anomalilerin keşfedilmesinden kapatılmasına kadar tek tek ele alınmasına yönelik iş akışını ve sınıflandırma kurallarını içeren süreçtir.",
+    "chapter": 5
+  },
+  {
+    "id": "hata-raporu",
+    "term": "Hata Raporu (Defect Report)",
+    "definition": "Dinamik test veya statik test sırasında tespit edilen bir anomaliyi belgeleyen; anomalinin tanımı, bağlamı, önem derecesi, önceliği ve durumu gibi bilgileri içeren dokümandır.",
+    "chapter": 5
+  },
+  {
+    "id": "test-otomasyonu",
+    "term": "Test Otomasyonu (Test Automation)",
+    "definition": "Test araçlarının test aktivitelerini (ör. test koşumu, kapsam ölçümü, regresyon testleri) manuel efor gerektirmeden gerçekleştirmesini sağlayan uygulamadır; zaman tasarrufu ve tutarlılık sağlarken kurulum, bakım ve gerçekçi olmayan beklenti gibi riskler de taşır.",
+    "chapter": 6
+  }
+]

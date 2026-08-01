@@ -1,0 +1,140 @@
+[
+{
+  "chapter": 1,
+  "title": "Yazılım Testinin Temelleri",
+  "sections": [
+    {"id":"1.1","title":"Yazılım Testi Nedir?","keyPoints":[
+      "Test, hata bulmak ve iş ürünlerinin kalitesini değerlendirmek için yapılan aktiviteler bütünüdür.",
+      "Doğrulama (verification): sistem gereksinimleri karşılıyor mu? Sağlama (validation): kullanıcı ihtiyaçlarını karşılıyor mu?",
+      "Test, hata ayıklamadan (debugging) farklıdır: test arızayı tetikler (dinamik) veya hatayı doğrudan bulur (statik); hata ayıklama arızanın nedenini bulup düzeltir (yeniden oluşturma, teşhis, düzeltme)."
+    ]},
+    {"id":"1.2","title":"Yazılım Testi Neden Gereklidir?","keyPoints":[
+      "Test, ürün odaklı ve düzeltici bir faaliyettir; Kalite Güvence (KG) ise süreç odaklı ve önleyicidir; ikisi birbirinden farklıdır.",
+      "Nedensellik zinciri: insan hatası yazılım hatasına (defect), hata da arızaya (failure) yol açar. Kök neden, sorunun temel sebebidir."
+    ]},
+    {"id":"1.3","title":"Test Prensipleri","keyPoints":[
+      "Yedi test prensibi: (1) Test hataların varlığını gösterir, yokluğunu ispatlayamaz; (2) yazılımı %100 test etmek imkânsızdır; (3) erken test zaman ve para kazandırır; (4) hatalar belirli alanlarda yoğunlaşır (Pareto prensibi); (5) antibiyotik/pestisit direnci — aynı testler tekrarlanınca etkisiz kalır; (6) test bağlama bağlıdır; (7) 'hata yok = başarılı yazılım' bir yanılgıdır."
+    ]},
+    {"id":"1.4","title":"Test Aktiviteleri, Çalışma Ürünleri ve Roller","keyPoints":[
+      "Yedi test aktivitesi grubu: test planlama, test gözetimi/kontrolü, test analizi, test tasarımı, test uyarlama, test koşumu, test tamamlama.",
+      "İzlenebilirlik, test esası ile test çalışma ürünleri ve sonuçları arasındaki bağlantıdır ve kapsam değerlendirmesini destekler.",
+      "İki test rolü vardır: test yönetimi rolü (planlama, gözetim, tamamlama) ve test etme rolü (analiz, tasarım, uyarlama, koşum)."
+    ]},
+    {"id":"1.5","title":"Beceriler ve İyi Uygulamalar","keyPoints":[
+      "Genel test uzmanı becerileri: test bilgisi, titizlik, iletişim, analitik düşünce, teknik bilgi ve alan bilgisi.",
+      "Tüm ekip yaklaşımında (whole team approach) herkes kaliteden sorumludur ve ortak bir çalışma alanı vardır.",
+      "Testin bağımsızlık seviyeleri arttıkça (yazarın kendisi, aynı ekip, başka ekip, şirket dışı) farklı bakış açısı sağlanır ancak iş birliği eksikliği riski de artar."
+    ]}
+  ]
+},
+{
+  "chapter": 2,
+  "title": "Yazılım Geliştirme Yaşam Döngüsü Boyunca Test",
+  "sections": [
+    {"id":"2.1","title":"YGYD Bağlamında Test","keyPoints":[
+      "YGYD modelleri sıralı (şelale, V modeli), döngüsel (spiral, prototipleme) veya artımlı (Birleşik Süreç) olabilir; model seçimi test aktivitelerinin zamanlamasını, dokümantasyonu, teknik seçimini ve rolleri etkiler.",
+      "Önce-test-et yaklaşımları: TDD (önce test yaz, kodla, yeniden düzenle), ATDD (kabul kriterlerinden testler türetilir), BDD (Given/When/Then formatında doğal dilde yazılır).",
+      "DevOps, geliştirme ve operasyonun ortak hedef için birlikte çalışmasıdır; CI/CD'yi destekler; hızlı geri bildirim sağlar ama pipeline kurulumu ve otomasyon maliyeti risktir.",
+      "Shift-left, testleri mümkün olduğunca erkene çekmektir; ilerleyen aşamalarda testin ihmal edilmesi anlamına gelmez.",
+      "Geriye dönük değerlendirmeler (retrospective), döngü/proje sonunda ne iyi gitti, ne kötü gitti ve nasıl iyileştirilir sorularını sorar; etkinlik, kalite ve iş birliğini artırır."
+    ]},
+    {"id":"2.2","title":"Test Seviyeleri ve Test Çeşitleri","keyPoints":[
+      "Beş test seviyesi: bileşen (birim) testi, bileşen entegrasyon testi, sistem testi, sistem entegrasyon testi, kabul testi (alfa/beta, KKT, operasyonel, sözleşmesel/düzenleyici); her seviyenin odak noktası ve sorumlusu farklıdır.",
+      "Dört test çeşidi her seviyede uygulanabilir: fonksiyonel (ne yapması gerektiği), fonksiyonel olmayan (ne kadar iyi yaptığı, ISO 25010), kara kutu (gereksinim bazlı) ve beyaz kutu (kod bazlı) test."
+    ]},
+    {"id":"2.3","title":"Onaylama Testi ve Regresyon Testi","keyPoints":[
+      "Onaylama testi, düzeltilen hatanın gerçekten düzeldiğini kontrol eder (aynı testi tekrar çalıştırma); regresyon testi, yapılan değişikliğin başka yerlerde yan etkiye yol açıp açmadığını kontrol eder.",
+      "İkisi de gerekebilir; regresyon testi otomasyon için güçlü bir adaydır.",
+      "Bakım testleri; planlı/düzeltici değişiklikler, operasyonel ortam yükseltme/taşıma veya kullanımdan kaldırma gibi tetikleyicilerle yapılır."
+    ]}
+  ]
+},
+{
+  "chapter": 3,
+  "title": "Statik Test",
+  "sections": [
+    {"id":"3.1","title":"Statik Testin Temelleri","keyPoints":[
+      "Statik test, yazılım çalıştırılmadan (gözden geçirme veya statik analiz aracıyla) yapılan incelemedir; gereksinimler, kod, test planları, sözleşmeler, modeller gibi okunabilen hemen her şey incelenebilir.",
+      "Statik test doğrudan hata bulur, dinamik test ise arızayı tetikler ve analizle hata bulunur; statik test YGYD'nin erken aşamalarında bile uygulanabilir ve gereksinim/tasarım hatalarını, dinamik testin bulamayacağı hataları (örn. ulaşılamayan kod) yakalayabilir."
+    ]},
+    {"id":"3.2","title":"Geri Bildirim ve Gözden Geçirme Süreci","keyPoints":[
+      "Gözden geçirme süreci sırasıyla: planlama, gözden geçirme başlangıcı, bireysel gözden geçirme, iletişim ve analiz, düzeltme ve raporlama adımlarından oluşur.",
+      "Roller: yönetici (neyin gözden geçirileceğine karar verir), yazar, moderatör (toplantıyı yönetir), katip (anomalileri kaydeder), gözden geçirici, gözden geçirme lideri (genel sorumluluk).",
+      "Resmiyet artan sırayla gözden geçirme çeşitleri: gayri resmi gözden geçirme, üzerinden geçme (walkthrough), teknik gözden geçirme, teftiş (inspection — en resmi, maksimum anomali bulma hedefli, yazar lider/katip olamaz).",
+      "Başarı faktörleri: net hedefler, doğru gözden geçirme türü seçimi, küçük parçalar halinde inceleme, geri bildirim verme, yeterli hazırlık süresi, yönetim desteği, iyi kolaylaştırma."
+    ]}
+  ]
+},
+{
+  "chapter": 4,
+  "title": "Test Analizi ve Tasarımı",
+  "sections": [
+    {"id":"4.1","title":"Test Teknikleri Genel Bakış","keyPoints":[
+      "Üç teknik grubu: kara kutu (spesifikasyon bazlı, davranışa bakar), beyaz kutu (yapı bazlı, koda bakar) ve tecrübeye dayalı (test uzmanının bilgi/deneyimine dayanır, diğer ikisini tamamlar)."
+    ]},
+    {"id":"4.2","title":"Kara Kutu Teknikleri","keyPoints":[
+      "Denklik paylarına ayırma (EP): veriler aynı şekilde işlenecek paylara ayrılır (geçerli/geçersiz pay); her paydan bir test yeterlidir.",
+      "Sınır değer analizi (BVA), yalnızca sıralı paylarda kullanılır ve sınırlara odaklanır; 2 değerli BVA sınır ve en yakın komşuyu, 3 değerli BVA sınır ve her iki komşuyu test eder (3 değerli daha titizdir).",
+      "Karar tablosu testleri, koşul kombinasyonlarını aksiyonlarla eşleştirir; kapsam, denenen sütun sayısının toplam uygulanabilir sütuna oranıdır.",
+      "Durum geçişi testleri; durumlar, olaylar ve geçişlerden oluşur. Üç kapsam kriteri: tüm durumlar (en zayıf), geçerli geçişler (0-anahtar, en yaygın), tüm geçişler (geçersiz geçişleri de kapsar, kritik sistemler için minimum gereksinim)."
+    ]},
+    {"id":"4.3","title":"Beyaz Kutu Teknikleri","keyPoints":[
+      "Komut (statement) testi, çalıştırılabilir komutları kapsar; %100 kapsam her komutun en az bir kez çalıştığı anlamına gelir.",
+      "Dal (branch) testi, karar çıktılarını (if/else, switch) kapsar; %100 dal kapsamı otomatik olarak %100 komut kapsamını sağlar ama tersi doğru değildir.",
+      "Beyaz kutu testinin gücü kodun tamamının dikkate alınmasıdır; zayıflığı eksik/kodlanmamış gereksinimleri yakalayamamasıdır."
+    ]},
+    {"id":"4.4","title":"Tecrübeye Dayalı Teknikler","keyPoints":[
+      "Hata tahminleme, geçmiş deneyime dayanarak olası hataları tahmin eder; kusur ortaya çıkarmaya yönelik saldırılar metodik bir yaklaşımdır.",
+      "Keşif testi, test tasarımı, koşumu ve değerlendirmesinin eş zamanlı yapılmasıdır; oturum bazlı test yaygın kullanılır (test başlatma belgesi ve bilgilendirme toplantısı ile).",
+      "Kontrol listesine dayalı test, soru şeklinde maddelerden oluşur, düzenli güncellenmeli ve çok uzun olmamalıdır."
+    ]},
+    {"id":"4.5","title":"İş Birliğine Dayalı Test Yaklaşımları","keyPoints":[
+      "Kullanıcı hikayesi 3C ile tanımlanır: Card, Conversation, Confirmation; iyi bir kullanıcı hikayesi INVEST (Bağımsız, Müzakere edilebilir, Değerli, Tahmin edilebilir, Küçük, Test edilebilir) kriterlerini karşılar.",
+      "Kabul kriterleri senaryo odaklı (Given/When/Then) veya kural odaklı (kontrol listesi/tablo) olabilir.",
+      "ATDD süreci: analiz çalıştayı, ardından test senaryoları (önce pozitif, sonra negatif, sonra fonksiyonel olmayan), ardından otomasyon."
+    ]}
+  ]
+},
+{
+  "chapter": 5,
+  "title": "Test Yönetimi",
+  "sections": [
+    {"id":"5.1","title":"Test Planlama","keyPoints":[
+      "Test planı; bağlam, varsayım/kısıtlar, paydaşlar, iletişim, risk kaydı, test yaklaşımı ve bütçe/zaman çizelgesini içerir; giriş kriterleri (aktivite başlamadan önce) ve çıkış kriterleri (aktivite bitmiş sayılması için) tanımlanır — çevikte Hazır Tanımı/Tamamlandı Tanımı karşılığıdır.",
+      "Dört tahminleme tekniği: oranlara dayalı (geçmiş projelerden oran), dışdeğerleme (ekstrapolasyon), Wideband Delphi (uzman görüşü/poker planlama) ve üç noktalı tahminleme (E = (a+4m+b)/6, SD = (b−a)/6).",
+      "Test senaryosu önceliklendirme; risk bazlı, kapsam bazlı veya gereksinim bazlı yapılabilir.",
+      "Test piramidi: alt katmanlarda küçük/hızlı/çok sayıda test, üst katmanlarda büyük/yavaş/az sayıda test bulunur.",
+      "Test çeyrekleri (Brian Marick): Q1 (teknoloji+ekip destek: bileşen/entegrasyon, otomatik), Q2 (iş+ekip destek: fonksiyonel/kabul, manuel+otomatik), Q3 (iş+eleştiri: keşif/kullanılabilirlik/KKT, manuel), Q4 (teknoloji+eleştiri: performans/duman testi, otomatik)."
+    ]},
+    {"id":"5.2","title":"Risk Yönetimi","keyPoints":[
+      "Risk seviyesi = Risk olasılığı × Risk etkisi.",
+      "Proje riski (organizasyonel, insan, teknik, tedarikçi ile ilgili) ve ürün riski (eksik fonksiyonalite, hatalı hesap, güvenlik açığı gibi kalite karakteristiğiyle ilgili) birbirinden ayrılır; ürün risk analizi risk belirleme ve değerlendirmeden, ürün risk kontrolü risk azaltma ve gözetimden oluşur.",
+      "Riske yanıt seçenekleri: azaltma (test yoluyla), kabul, transfer, acil durum planı."
+    ]},
+    {"id":"5.3","title":"Test Gözetimi, Kontrol ve Tamamlama","keyPoints":[
+      "Test gözetimi bilgi toplamayı, test kontrolü düzeltici aksiyon almayı içerir.",
+      "Metrik türleri: proje ilerleme, test ilerleme, ürün kalite, hata, risk, kapsam ve maliyet metrikleri.",
+      "Test ilerleme raporu düzenli/sık hazırlanırken, test tamamlama raporu bir kez, kilometre taşında hazırlanır."
+    ]},
+    {"id":"5.4","title":"Yapılandırma Yönetimi","keyPoints":[
+      "Yapılandırma yönetimi test öğelerini benzersiz tanımlar, versiyon kontrolü yapar ve izlenebilirliği sağlar; temel çizgi (baseline) onaylanan versiyonu temsil eder."
+    ]},
+    {"id":"5.5","title":"Hata Yönetimi","keyPoints":[
+      "Hata raporu içeriği: benzersiz ID, başlık/özet, tarih/yazar, test nesnesi/ortamı tanımı, bağlam, arıza açıklaması ve kanıt, beklenen vs gerçekleşen sonuç, önem derecesi, öncelik, durum ve referanslar."
+    ]}
+  ]
+},
+{
+  "chapter": 6,
+  "title": "Test Aktivitelerini Destekleyen Araçlar",
+  "sections": [
+    {"id":"6.1","title":"Araç Desteği","keyPoints":[
+      "Araç türleri: yönetim araçları, statik test araçları, test tasarımı/uygulama araçları, test koşumu/kapsam araçları, fonksiyonel olmayan test araçları, DevOps araçları, iş birliği araçları ve ölçeklenebilirlik araçları (sanal makine, konteynerleştirme)."
+    ]},
+    {"id":"6.2","title":"Test Otomasyonunun Faydaları ve Riskleri","keyPoints":[
+      "Faydalar: zaman tasarrufu, tutarlılık, objektif değerlendirme, kolay bilgi erişimi, daha hızlı geri bildirim ve pazara sürüm, test uzmanlarına derin testler için zaman kazandırma.",
+      "Riskler: gerçekçi olmayan beklentiler, yanlış zaman/maliyet tahmini, manuel testin daha uygun olduğu yerde araç kullanma, aracın eleştirel düşünmenin yerini alacağı yanılgısı, satıcıya bağımlılık ve platform uyumsuzluğu."
+    ]}
+  ]
+}
+]
